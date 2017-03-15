@@ -81,8 +81,8 @@ int getPos(int x) {
 
 int main()
 {
-//    freopen("input_s3.in","r",stdin);
-//    freopen("output_s3.out","w",stdout);
+    freopen("input_l3.in","r",stdin);
+    freopen("output_l3.out","w",stdout);
 
     int N;
     vector <string> WordList;
@@ -97,7 +97,7 @@ int main()
     }
 
     for(unsigned int j=0;j < WordList.size(); j++){
-        cout<<"Case #1: ";
+        cout<<"Case #"<<j+1<<": ";
         for(int i=0;i < WordList[j].size() ;i++) {
             getPos(int(WordList[j][i]));
         }
