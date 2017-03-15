@@ -81,8 +81,8 @@ int getPos(int x) {
 
 int main()
 {
-    freopen("input_s3.in","r",stdin);
-    freopen("output_s3.out","w",stdout);
+    //freopen("input_l3.in","r",stdin);
+    //freopen("output_l3.out","w",stdout);
 
     int N;
     vector <string> WordList;
