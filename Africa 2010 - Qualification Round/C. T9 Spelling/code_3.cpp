@@ -14,7 +14,7 @@ const int P[4] = { 7777, 777, 77, 7 };
 const int T[3] = { 888, 88 ,8 };
 const int W[4] = { 9999 ,999, 99, 9 };
 
-int s = 0;
+int s = 1;
 
 int getPos(int x) {
     int n;
@@ -75,14 +75,18 @@ int getPos(int x) {
         cout<<W[n];
         s=9;
     } else if(x==32) {
+        if(s==0) {
+            cout<<" ";
+        }
         cout<<"0";
+        s=0;
     }
 }
 
 int main()
 {
-    freopen("input_l3.in","r",stdin);
-    freopen("output_l3.out","w",stdout);
+//    freopen("input_l3.in","r",stdin);
+//    freopen("output_l3.out","w",stdout);
 
     int N;
     vector <string> WordList;
@@ -102,7 +106,7 @@ int main()
             getPos(int(WordList[j][i]));
         }
 	 cout<<endl;
-	 s=0;
+	 s=1;
     }
 
 
