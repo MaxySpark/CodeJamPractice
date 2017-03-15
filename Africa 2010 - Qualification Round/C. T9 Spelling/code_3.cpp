@@ -42,8 +42,6 @@ int getPos(int x) {
         cout<<W[n];
     } else if(x==32) {
         cout<<"0";
-    }  else {
-        cout<<" ";
     }
 }
 
