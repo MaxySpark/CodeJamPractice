@@ -21,10 +21,12 @@ void Train :: input() {
     cin >> NA;
     cin >> NB;
     cin.ignore();
+
     for(int i=0;i < NA; i++) {
         getline(cin,str);
         FA.push_back(str);
     }
+
     for(int i=0;i < NB; i++) {
         getline(cin,str);
         FA.push_back(str);
@@ -32,6 +34,7 @@ void Train :: input() {
 }
 
 void Train :: display() {
+
     for(unsigned int i=0; i< FA.size(); i++) {
         cout<<FA[i]<<endl;
     }
