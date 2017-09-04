@@ -34,22 +34,17 @@ class Name {
         }
 
     }
-
     void result(int C) {
         System.out.println("Case #"+ C +": "+ names.get(max));
     }
  }
 
 public class A {
-
    public static void main(String[] args) {
-      Scanner read = new Scanner(System.in);
+       Scanner read = new Scanner(System.in);
        int T = read.nextInt();
-
        String str;
-//      ArrayList<String> list = new ArrayList(T);
-
-      Name[] name = new Name[T];
+       Name[] name = new Name[T];
 
       for(int i=0;i<T;i++) {
           int N = read.nextInt();
@@ -62,10 +57,5 @@ public class A {
           name[i].total();
           name[i].result(i+1);
       }
-
-
-
-
-
    }
 }
